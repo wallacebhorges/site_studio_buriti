@@ -1,0 +1,596 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+
+/* Padding below the footer and lighter body text */
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100% !important;
+    color: #5a5a5a;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header {
+    background-color: transparent;
+}
+
+main {
+    background: url('../imagens/nova_era_internet_realidade_aumentada.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+}
+
+@media (max-width: 620px) {
+    main {
+        background: url('../imagens/nova_era_internet_realidade_aumentada_mobile.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.fixed-top {
+    background-color: #5F328C;
+    transition: .5s;
+}
+
+.b {
+    fill: #5F328C;
+}
+
+.fixed-top .b {
+    fill: #ffffff !important;
+    transition: .5s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-theader-title,
+.heading-one,
+.product-price {
+    font-family: proxima-soft, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+footer {
+    background-color: #6E48AA;
+    margin: 0;
+    padding: 0;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer span,
+footer a,
+footer li,
+footer a:hover {
+    font-family: proxima-soft, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #ffffff;
+    list-style: none;
+    text-decoration: none;
+}
+
+footer strong {
+    font-weight: 600;
+}
+
+footer .bi {
+    color: #F2055C;
+    font-size: 42px;
+}
+
+footer h3 {
+    color: #F2055C;
+}
+
+footer ol,
+ul {
+    padding-left: 0;
+}
+
+.svg-g {
+    margin-top: -500px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 0;
+    }
+    .modal .featurette-heading {
+        margin-top: 1rem;
+    }
+}
+
+.nav-link {
+    font-family: proxima-soft, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: #F2055C !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #5F328C;
+}
+
+.fixed-top .nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #F2055C !important;
+}
+
+ :root {
+    --bs-primary-rgb: 255, 255, 256 !important;
+}
+
+.link-color-1,
+.link-color-3:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link-color-3,
+.link-color-3:hover {
+    color: #5F328C;
+    text-decoration: none;
+}
+
+.fixed-top .link-color-1,
+.fixed-top .link-color-3 {
+    color: #ffffff !important;
+}
+
+a span {
+    font-family: anton, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carousel-inner {
+    height: auto;
+}
+
+.svg-md-icon {
+    width: 80px;
+}
+
+.st0 {
+    fill: #5F328C;
+}
+
+.btn-primary {
+    background-color: #F2055C;
+    border-color: #F2055C;
+}
+
+.btn-primary:hover {
+    color: #F2055C;
+    background-color: transparent;
+    border-color: #F2055C;
+    transition: all 0.15s;
+}
+
+.btn-secondary {
+    background-color: #6E48AA;
+    border-color: #6E48AA;
+}
+
+.btn-secondary:hover {
+    background-color: #6E48AA;
+    border-color: #6E48AA;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #18d689;
+    border-color: #18d689;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #18d689;
+    border-color: #18d689;
+}
+
+.btn-callToaction,
+.btn-callToaction:hover,
+.btn-callToaction:focus {
+    background-color: #10E85F;
+    border: none;
+    color: #0C7440;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.section-theader .btn-callToaction,
+.section-theader .btn-callToaction:hover,
+.section-theader .btn-callToaction:focus {
+    background-color: #F2055C;
+    border: none;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.btn-check:focus+.btn-success,
+.btn-success:focus {
+    color: #fff;
+    background-color: #18d689;
+    border-color: #18d689;
+    box-shadow: 0 0 0 0.25rem rgba(24, 214, 137, 0.5);
+}
+
+.btn-check:checked+.btn-success,
+.btn-check:active+.btn-success,
+.btn-success:active,
+.btn-success.active,
+.show>.btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: #18d689;
+    border-color: #13653f;
+}
+
+.btn-check:checked+.btn-success:focus,
+.btn-check:active+.btn-success:focus,
+.btn-success:active:focus,
+.btn-success.active:focus,
+.show>.btn-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(24, 214, 137, 0.5);
+}
+
+.btn-success:disabled,
+.btn-success.disabled {
+    color: #fff;
+    background-color: #18d689;
+    border-color: #18d689;
+}
+
+#portfolio .container-fluid,
+#portfolio .container-sm,
+#portfolio .container-md,
+#portfolio .container-lg,
+#portfolio .container-xl,
+#portfolio .container-xxl {
+    max-width: 1920px;
+}
+
+#portfolio .container-fluid .portfolio-box,
+#portfolio .container-sm .portfolio-box,
+#portfolio .container-md .portfolio-box,
+#portfolio .container-lg .portfolio-box,
+#portfolio .container-xl .portfolio-box,
+#portfolio .container-xxl .portfolio-box {
+    position: relative;
+    display: block;
+    background: #6E48AA;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption,
+#portfolio .container-md .portfolio-box .portfolio-box-caption,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption,
+#portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(95, 50, 140, 0.9);
+    transition: opacity 0.25s ease;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category,
+#portfolio .container-md .portfolio-box .portfolio-box-caption .project-category,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category,
+#portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
+    font-family: proxima-soft, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-md .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+    font-size: 1.2rem;
+}
+
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-sm .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-md .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-lg .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-xl .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+.portfolio-modal .modal-dialog {
+    margin: 1rem;
+    max-width: 100vw;
+}
+
+.portfolio-modal .modal-content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.portfolio-modal .modal-content h2,
+.portfolio-modal .modal-content .h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.portfolio-modal .modal-content p.item-intro {
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-family: proxima-soft, sans-serif;
+}
+
+.portfolio-modal .modal-content p {
+    margin-bottom: 2rem;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+    margin-bottom: 2rem;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 2rem;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: 0.3;
+}
+
+
+/* Classes dos cards */
+
+.card {
+    padding: 0;
+}
+
+.card img {
+    background: #5F328C;
+}
+
+.card-title,
+.card-title:hover {
+    font-weight: 400;
+    font-size: 1rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-body {
+    padding: 1rem 0.3rem;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.card-text strong {
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #5F328C;
+}
+
+.product-price {
+    margin-bottom: -10px;
+    color: #5F328C;
+    font-size: 1.5rem;
+}
+
+
+/* CLASSES CRIADAS POR WALLACE BORGES */
+
+.section-primary {
+    background-color: #5F328C;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 120px;
+    padding-top: 100px;
+}
+
+.section-primary p {
+    color: #ffffff;
+}
+
+.section-primary .heading-one {
+    position: relative;
+    font-size: 3.5em;
+    line-height: 1.5em;
+}
+
+.heading-one {
+    color: #F2055C;
+}
+
+.heading-one {
+    font-size: 28px;
+}
+
+.heading-one strong {
+    color: #ffffff;
+}
+
+.cta-primary {
+    display: block;
+    position: relative;
+    max-width: 100%;
+}
+
+.section-secondary {
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 60px;
+}
+
+.section-secondary p,
+.section-theader p {
+    color: inherit;
+}
+
+.paragrafo-big {
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.section-secondary h2,
+.section-theader h2 {
+    color: #6E48AA;
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 52px;
+}
+
+.section-theader {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin-top: 160px;
+}
+
+@media (max-width: 767px) {
+    .section-theader .col-md-4 {
+        margin-top: 60px;
+    }
+    .section-theader p {
+        height: inherit;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-theader p {
+        height: 320px;
+    }
+}
+
+@media (min-width: 992px) {
+    .section-theader p {
+        height: 200px;
+    }
+}
+
+.section-theader-title {
+    color: #6E48AA !important;
+    font-size: 2.8em;
+    line-height: 52px;
+    margin-bottom: 8px;
+}
+
+.section-home {
+    width: 100%;
+    height: 60vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-home h1,
+.section-home h2 {
+    color: #F2055C;
+    font-size: 3.5em;
+}
+
+.section-home h1 strong,
+.section-home h2 strong,
+.section-home p {
+    color: #ffffff;
+}
+
+.section-home p {
+    font-size: 1.8em;
+    text-shadow: #333333 0.1em 0.1em 0.2em;
+}
+
+@media (max-width: 767px) {
+    .section-home h1,
+    .section-home h2 {
+        font-size: 2.5em;
+    }
+    .section-home p {
+        font-size: 1.5em;
+    }
+}

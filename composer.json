@@ -1,0 +1,15 @@
+{
+    "description": "Site com MVC",
+    "author": [
+        {
+            "name": "Wallace Borges",
+        "e-mail": "wallaceborgessp@outlook.com"}
+    ],
+    "autoload":{
+        "psr-4":{
+            "App\\": "app",
+            "Core\\": "core"
+        }
+    },
+    "require":{}
+}
